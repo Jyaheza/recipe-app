@@ -64,8 +64,8 @@ npm install
 ```
 Running the App
 
-
 Backend
+
 Ensure you are in the backend directory with the virtual environment activated. Start the Django server:
 
 ```bash
@@ -74,6 +74,7 @@ python manage.py runserver
 The backend will be accessible at http://localhost:8000/.
 
 Frontend
+
 Ensure you are in the frontend directory and start the React app:
 
 ```bash
