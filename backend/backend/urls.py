@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('recipes.urls')),
+    path('api/', include('recipes.urls')), # Accessing routes from router defined in recipes/urls.py
 ]
