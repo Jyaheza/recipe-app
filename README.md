@@ -1,25 +1,5 @@
-markdown
-Copy code
 # Food Recipes App
 
-## Overview
-
-The Food Recipes App is a full-stack application designed to create, list, and manage food recipes. The app features a modern UI built with React and Material-UI on the frontend and a robust Django backend. Users can add new recipes via a dialog box and manage them with an easy-to-use interface.
-
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [Running the App](#running-the-app)
-  - [Backend](#backend)
-  - [Frontend](#frontend)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Prerequisites
 
 Before getting started, ensure you have the following installed:
 
@@ -34,51 +14,67 @@ Before getting started, ensure you have the following installed:
 Clone the repository and navigate into the project directory:
 
 ```bash
-git clone https://github.com/yourusername/food-recipes-app.git
-cd food-recipes-app
+git clone https://github.com/jyaheza/recipe-app.git
+cd recipe-app
+```
 Backend Setup
 Navigate to the backend directory:
 
-bash
-Copy code
+```bash
 cd backend
+```
 Create and activate a virtual environment:
 
 On macOS/Linux:
 
-bash
-Copy code
+```bash
 python3 -m venv env
 source env/bin/activate
+```
 On Windows:
 
-bash
-Copy code
+```bash
 python -m venv env
 .\env\Scripts\activate
+```
 Install the required Python packages:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
+```
 Apply database migrations:
 
-bash
-Copy code
+```bash
 python manage.py migrate
+```
 Start the Django development server:
+
+```bash
+python manage.py runserver
+```
+Frontend Setup
+Navigate to the frontend directory:
+
+```bash
+cd ../frontend
+```
+Install the required npm packages:
+```bash
+npm install
+```
+Running the App
+Backend
+Ensure you are in the backend directory with the virtual environment activated. Start the Django server:
 
 bash
 Copy code
 python manage.py runserver
-Frontend Setup
-Navigate to the frontend directory:
+The backend will be accessible at http://localhost:8000/.
+
+Frontend
+Ensure you are in the frontend directory and start the React app:
 
 bash
 Copy code
-cd ../frontend
-Install the required npm packages:
-
-bash
-Copy code
-npm install
+npm start
+The frontend will be accessible at http://localhost:3000/.
