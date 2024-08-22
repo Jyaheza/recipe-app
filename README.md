@@ -63,6 +63,8 @@ Install the required npm packages:
 npm install
 ```
 Running the App
+
+
 Backend
 Ensure you are in the backend directory with the virtual environment activated. Start the Django server:
 
